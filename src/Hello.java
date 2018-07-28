@@ -9,30 +9,6 @@ public class Hello {
 		System.out.println(a>>4);
 	}
 	
-	public void getNextMonth(String date){
-		String[] da = date.split("-");
-		System.out.println(da);
-		int dain = Integer.parseInt(da[1]);
-		int dainy = Integer.parseInt(da[0]);
-		
-		dain++;
-		if(dain > 12){
-			dain -= 12;
-			dainy = Integer.parseInt(da[0]);
-			dainy += 1;
-		}
-		String dains;
-		if(dain < 10){
-			dains = "0" + String.valueOf(dain);
-		}else{
-			dains = String.valueOf(dain);
-		}
-		
-		String dainys = String.valueOf(dainy);
-		
-		System.out.println(dainys+"-"+dains);
-	}
-	
 	@Test
 	public void test(){
 		Calendar cale = null; 
